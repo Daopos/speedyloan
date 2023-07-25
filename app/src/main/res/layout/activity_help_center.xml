@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEF5F0"
+    tools:context=".HelpCenter">
+
+
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="37dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="12dp"
+        android:rotation="180"
+        android:onClick="onclick_toProfile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/right_arrow_green" />
+
+    <TextView
+        android:id="@+id/textView64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Help Center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#5AA06B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vieasd2"
+        android:layout_width="346dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="16dp"
+        android:onClick="onclick_toCustomerService"
+        android:background="@drawable/assessment_box"
+        app:layout_constraintEnd_toEndOf="@+id/textView66"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView66"
+        app:layout_constraintTop_toBottomOf="@+id/textView66" />
+
+    <TextView
+        android:id="@+id/textView65"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="4dp"
+        android:background="#D2FBA4"
+        android:gravity="center"
+        android:text="Go"
+        app:layout_constraintEnd_toEndOf="@+id/textView67"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView67"
+        app:layout_constraintTop_toBottomOf="@+id/textView67" />
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Contact us"
+        android:textColor="#2C5E1A"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView64" />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Online Service"
+        android:textColor="#759F62"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/vieasd2"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="@+id/vieasd2"
+        app:layout_constraintTop_toTopOf="@+id/vieasd2" />
+
+    <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="87dp"
+        android:layout_height="91dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vieasd2"
+        app:layout_constraintEnd_toEndOf="@+id/vieasd2"
+        app:layout_constraintTop_toTopOf="@+id/vieasd2"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/user_pic" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout2"
+        android:layout_width="415dp"
+        android:layout_height="43dp"
+        android:background="#EEF5F0"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vieasd2"
+        app:tabIndicatorColor="#5AA06B"
+        app:tabIndicatorFullWidth="false"
+        app:tabSelectedTextColor="#5AA06B"
+        app:tabTextColor="#6AA979">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Application"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="196dp" />
+
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Withdrawal"
+            tools:layout_editor_absoluteX="236dp"
+            tools:layout_editor_absoluteY="217dp" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repayment"
+            tools:layout_editor_absoluteX="236dp"
+            tools:layout_editor_absoluteY="217dp" />
+    </com.google.android.material.tabs.TabLayout>
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#759F62"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout2"
+        tools:ignore="MissingConstraints"></View>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="566dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        app:layout_constraintVertical_bias="0.511" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

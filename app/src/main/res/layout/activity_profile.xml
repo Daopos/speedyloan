@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEF5F0"
+    tools:context=".Profile">
+
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:background="@drawable/green_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="143dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user_pic" />
+
+    <TextView
+        android:id="@+id/p_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="User"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+    <TextView
+        android:id="@+id/p_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="user@gmail.com"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p_username" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="371dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p_email" />
+
+    <Button
+        android:id="@+id/p_profile"
+        android:layout_width="82dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/hiding_menu"
+        android:contentDescription="@string/app_name"
+        android:drawableTop="@drawable/ic_profile"
+        android:drawablePadding="-14dp"
+        android:text="Profile"
+        android:textColor="#6AA979"
+        android:textAllCaps="false"
+        android:textStyle="bold|italic"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/p_account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view4"
+        android:onClick="onclick_toMyProfile"
+        />
+
+    <Button
+        android:id="@+id/p_account"
+        android:layout_width="82dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/hiding_menu"
+        android:contentDescription="@string/app_name"
+        android:drawableTop="@drawable/ic_accounts"
+        android:drawablePadding="-14dp"
+        android:onClick="onClick_toAccount"
+        android:text="Account"
+        android:textColor="#6AA979"
+        android:textStyle="italic|bold"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
+
+    <Button
+        android:id="@+id/p_message"
+        android:layout_width="82dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/hiding_menu"
+        android:contentDescription="@string/app_name"
+        android:drawableTop="@drawable/ic_messages"
+        android:textAllCaps="false"
+        android:drawablePadding="-12dp"
+        android:text="Messages"
+        android:textColor="#6AA979"
+        android:textStyle="italic|bold"
+        android:textSize="16dp"
+        android:onClick="onClick_toMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toEndOf="@+id/p_account"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:drawableLeft="@drawable/ic_verification"
+        android:paddingLeft="40dp"
+        android:paddingRight="198dp"
+        android:textStyle="italic"
+        android:textColor="#5AA06B"
+        android:layout_width="fill_parent"
+        android:textAllCaps="false"
+        android:text="Verification"
+        android:background="@drawable/hiding_menu2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="onClick_toVerification"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#759F62"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"></View>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/hiding_menu2"
+        android:drawableLeft="@drawable/ic_withdraw"
+        android:paddingLeft="40dp"
+        android:paddingRight="150dp"
+        android:text="Withdrawal Method"
+        android:textAllCaps="false"
+        android:textColor="#5AA06B"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        android:onClick="onclick_toWithdrawal"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#759F62"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"></View>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:drawableLeft="@drawable/ic_repayment"
+        android:paddingLeft="40dp"
+        android:paddingRight="198dp"
+        android:text="Repayment"
+        android:textAllCaps="false"
+        android:onClick="onClick_toRepayment"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/hiding_menu2"
+        android:textStyle="italic"
+        android:textColor="#5AA06B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view6" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#759F62"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6"></View>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:drawableLeft="@drawable/ic_coupon"
+        android:paddingLeft="40dp"
+        android:paddingRight="198dp"
+        android:text="My Coupon"
+        android:textStyle="italic"
+        android:textColor="#5AA06B"
+        android:onClick="onClick_toCoupon"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/hiding_menu2"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view7" />
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#759F62"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5"></View>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:drawableLeft="@drawable/ic_help"
+        android:paddingLeft="40dp"
+        android:paddingRight="198dp"
+        android:text="Help Center"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:textColor="#5AA06B"
+        android:onClick="onClick_toHelpCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/hiding_menu2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view8" />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#759F62"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"></View>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:drawableLeft="@drawable/ic_logout"
+        android:paddingLeft="40dp"
+        android:paddingRight="228dp"
+        android:text="Log out"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:textColor="#5AA06B"
+        android:background="@drawable/hiding_menu2"
+        android:onClick="onClick_toLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#759F62"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"></View>
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="28dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/right_arrow_green" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="28dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/right_arrow_green" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="37dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="12dp"
+        android:rotation="180"
+        android:onClick="onclick_toHome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/right_arrow_green" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="28dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/view6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/right_arrow_green" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="28dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/view7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view6"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/right_arrow_green" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="28dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/view8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view7"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/right_arrow_green" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="28dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/view9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view8"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/right_arrow_green" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="28dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/view10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view9"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/right_arrow_green" />
+
+    <TextView
+        android:id="@+id/textView80"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="7dp"
+        android:onClick="onClick_toLoyal"
+        android:background="@drawable/loyalty_member"
+        android:gravity="center"
+        android:text="Loyalty member"
+        android:textColor="#64000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  res/drawable/rounded_edittext.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/listview_background_shape">
+<padding android:left="2dp"
+    android:top="2dp"
+    android:right="2dp"
+    android:bottom="2dp" />
+<corners android:radius="25dp" />
+<solid android:color="#D1E9BC" />
+</shape>

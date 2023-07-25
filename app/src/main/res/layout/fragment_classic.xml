@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEF5F0"
+    tools:context=".ClassicFragment">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_nav"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView41"
+                android:layout_width="56dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/discount"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.047"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView83"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Save 5%"
+                android:textColor="#2C5E1A"
+                android:textStyle="bold|italic"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView41"
+                app:layout_constraintStart_toEndOf="@+id/imageView41"
+                app:layout_constraintTop_toTopOf="@+id/imageView41"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView84"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#759F62"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView41" />
+
+            <TextView
+                android:id="@+id/textView85"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Valid for 2 days"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView83"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView83"
+                app:layout_constraintTop_toBottomOf="@+id/textView83" />
+
+
+            <ImageView
+                android:id="@+id/imageView412"
+                android:layout_width="56dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_coupon"
+                app:layout_constraintEnd_toEndOf="@+id/imageView41"
+                app:layout_constraintStart_toStartOf="@+id/imageView41"
+                app:layout_constraintTop_toBottomOf="@+id/imageView41" />
+
+            <TextView
+                android:id="@+id/textView832"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="₱50 OFF"
+                android:textColor="#2C5E1A"
+                android:textStyle="bold|italic"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView412"
+                app:layout_constraintStart_toEndOf="@+id/imageView412"
+                app:layout_constraintTop_toTopOf="@+id/imageView412"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView842"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#759F62"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView412" />
+
+            <TextView
+                android:id="@+id/textView852"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="minimum loan of P5,000"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView832"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView832"
+                app:layout_constraintTop_toBottomOf="@+id/textView832" />
+
+
+            <ImageView
+                android:id="@+id/imageView4122"
+                android:layout_width="56dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_coupon"
+                app:layout_constraintEnd_toEndOf="@+id/imageView412"
+                app:layout_constraintStart_toStartOf="@+id/imageView412"
+                app:layout_constraintTop_toBottomOf="@+id/imageView412" />
+
+            <TextView
+                android:id="@+id/textView8322"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="₱100 OFF"
+                android:textColor="#2C5E1A"
+                android:textStyle="bold|italic"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView4122"
+                app:layout_constraintStart_toEndOf="@+id/imageView4122"
+                app:layout_constraintTop_toTopOf="@+id/imageView4122"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView8422"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#759F62"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4122" />
+
+            <TextView
+                android:id="@+id/textView8522"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="minimum loan of P10,000"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView8322"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView8322"
+                app:layout_constraintTop_toBottomOf="@+id/textView8322" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="DatePickerDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <!-- Customize the background color -->
+        <item name="android:windowBackground">#fff</item>
+        <!-- Customize the text color -->
+        <item name="android:textColorPrimary">#000</item>
+        <!-- Customize the button color -->
+        <item name="colorAccent">#759F62</item>
+    </style>
+</resources>

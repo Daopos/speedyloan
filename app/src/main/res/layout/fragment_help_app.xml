@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#EEF5F0"
+    tools:context=".HelpAppFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+         <TextView
+             android:id="@+id/test1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="How to apply?"
+             android:textColor="#759F62"
+             android:textStyle="bold"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="@+id/button1"
+             app:layout_constraintBottom_toBottomOf="@id/button1"
+             android:layout_marginStart="20dp"
+             />
+
+            <ImageView
+                android:id="@+id/button1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/arrow_down"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:onClick="onClick_showapp1"
+                />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/test1"
+                app:layout_constraintStart_toStartOf="parent"
+                android:padding="20dp"
+                android:text="Step 1\nDownload SpeedyLoan App in Google Play or App Store Prepare your Valid ID and fill out the application
+\n\nStep 2\nGet your loan approved. Follow the application process and receive SMS confirmation within 24-48hrs regarding the status of your loan application. Note: Cash disbursement take 24 to 48h hours. Make sure your bank account is active to avoid any delays during disbursement.
+\n\nStep 3\nReceive money. Once your application has been approved, you can:\n>Bank Transfer (for those who choose bank as their disbursement method)
+\n>E-wallet Transfer ( For GCASH, Coins, GrabPay)
+\n>Pay bills
+\n\nStep 4
+\nRepay on or before your due date. Before your loan is due, you can repay in &quot;Bill Tab&quot; page to see all payment options."
+                android:visibility="gone"
+                />
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#759F62"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text1"
+                android:layout_marginTop="7dp"
+                tools:ignore="MissingConstraints"></View>
+
+            <TextView
+                android:id="@+id/test2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My personal information / work / \ncontact has changed, how to modify it?"
+                android:textColor="#759F62"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/button2"
+                app:layout_constraintBottom_toBottomOf="@id/button2"
+                android:layout_marginStart="20dp"
+                />
+
+            <ImageView
+                android:id="@+id/button2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/arrow_down"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/text1"
+                android:onClick="onClick_showapp2"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/test2"
+                app:layout_constraintStart_toStartOf="parent"
+                android:padding="20dp"
+                android:text="Currently, our system doesn't have the facility to change or update your information."
+                android:visibility="gone"
+                />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#759F62"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text2"
+                android:layout_marginTop="7dp"
+                tools:ignore="MissingConstraints"></View>
+
+            <TextView
+                android:id="@+id/test3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How to cancel loan?"
+                android:textColor="#759F62"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/button3"
+                app:layout_constraintBottom_toBottomOf="@id/button3"
+                android:layout_marginStart="20dp"
+                />
+
+            <ImageView
+                android:id="@+id/button3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/arrow_down"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/text2"
+                android:onClick="onClick_showapp3"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/test3"
+                app:layout_constraintStart_toStartOf="parent"
+                android:padding="20dp"
+                android:text="Please be informed that upon your acceptance of the loan amount in your App, we have already processed the disbursement. In this case, you can only repay the loan."
+                android:visibility="gone"
+                />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#759F62"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text3"
+                android:layout_marginTop="7dp"
+                tools:ignore="MissingConstraints"></View>
+
+            <TextView
+                android:id="@+id/test4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How could you protect my information"
+                android:textColor="#759F62"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/button4"
+                app:layout_constraintBottom_toBottomOf="@id/button4"
+                android:layout_marginStart="20dp"
+                />
+
+            <ImageView
+                android:id="@+id/button4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/arrow_down"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/text3"
+                android:onClick="onClick_showapp4"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/test4"
+                app:layout_constraintStart_toStartOf="parent"
+                android:padding="20dp"
+                android:text="Our company has strict information security system, and every employee has signed a confidentiality agreement with the company, so your information is fully protected."
+                android:visibility="gone"
+                />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#759F62"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text4"
+                android:layout_marginTop="7dp"
+                tools:ignore="MissingConstraints"></View>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</FrameLayout>

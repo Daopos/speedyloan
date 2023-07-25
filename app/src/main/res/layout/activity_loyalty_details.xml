@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEF5F0"
+    tools:context=".LoyaltyDetails">
+
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="33dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="12dp"
+        android:rotation="180"
+        android:onClick="onclick_toProfile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/right_arrow_green" />
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="411dp"
+        android:layout_height="547dp"
+        android:layout_marginTop="4dp"
+        android:background="#B2D2A4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView64" />
+
+    <TextView
+        android:id="@+id/textView64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="LoyaltyDetails"
+        android:textColor="#5AA06B"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toEndOf="@+id/imageView33"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loyalty"
+        android:textColor="#2C5E1A"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView37" />
+
+    <View
+        android:id="@+id/vieasd"
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        android:background="#759F62"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView37"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView37"
+        app:layout_constraintTop_toTopOf="@+id/imageView37"
+        app:layout_constraintVertical_bias="0.0"></View>
+
+    <View
+        android:id="@+id/vieasd4"
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        android:background="#759F62"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView37"
+        app:layout_constraintEnd_toStartOf="@+id/imageView37"
+        app:layout_constraintTop_toTopOf="@+id/imageView37"></View>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="#EEF5F0"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView58"
+        app:tabIndicatorColor="#2C5E1A"
+        app:tabIndicatorFullWidth="false"
+        app:tabSelectedTextColor="#2C5E1A"
+        app:tabTextColor="#2C5E1A">
+
+                                <com.google.android.material.tabs.TabItem
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Classic"
+                                    tools:layout_editor_absoluteX="1dp"
+                                    tools:layout_editor_absoluteY="489dp" />
+
+
+                                <com.google.android.material.tabs.TabItem
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Silver"
+                                    tools:layout_editor_absoluteX="236dp"
+                                    tools:layout_editor_absoluteY="217dp" />
+
+                                <com.google.android.material.tabs.TabItem
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Gold"
+                                    tools:layout_editor_absoluteX="236dp"
+                                    tools:layout_editor_absoluteY="217dp" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#2C5E1A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout3"
+        tools:ignore="MissingConstraints"></View>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager3"
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="155dp"
+        android:layout_height="67dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView36"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toEndOf="@+id/imageView36"
+        app:layout_constraintTop_toTopOf="@+id/imageView36"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo_letter" />
+
+    <ImageView
+        android:id="@+id/imageView36"
+        android:layout_width="123dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView58"
+        app:srcCompat="@drawable/logo_peso" />
+
+    <ImageView
+        android:id="@+id/imageView37"
+        android:layout_width="32dp"
+        android:layout_height="33dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView36"
+        app:srcCompat="@drawable/light" />
+
+    <TextView
+        android:id="@+id/textView68"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loan &amp; earn rewards!"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/textView66"
+        app:layout_constraintStart_toStartOf="@+id/textView66"
+        app:layout_constraintTop_toBottomOf="@+id/textView66" />
+
+    <View
+        android:id="@+id/vieasasdd"
+        android:layout_width="370dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/loyaltywhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView68">
+
+
+    </View>
+
+    <View
+        android:id="@+id/vieasasdd2"
+        android:layout_width="370dp"
+        android:layout_height="144dp"
+        android:background="@drawable/loyaltywhite"
+
+        app:layout_constraintBottom_toBottomOf="@+id/textView58"
+        app:layout_constraintEnd_toEndOf="@+id/vieasasdd"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="@+id/vieasasdd"
+        app:layout_constraintTop_toBottomOf="@+id/vieasasdd"
+        app:layout_constraintVertical_bias="0.428">
+
+
+    </View>
+
+    <TextView
+        android:id="@+id/textView69"
+        android:layout_width="183dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/loyaltygreen"
+        android:gravity="center"
+        android:text="HOW TO GET REWARDS"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/vieasasdd"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/vieasasdd"
+        app:layout_constraintTop_toBottomOf="@+id/textView68" />
+
+    <ImageView
+        android:id="@+id/imageView38"
+        android:layout_width="77dp"
+        android:layout_height="63dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView39"
+        app:layout_constraintEnd_toEndOf="@+id/vieasasdd"
+        app:layout_constraintStart_toEndOf="@+id/imageView39"
+        app:layout_constraintTop_toBottomOf="@+id/textView69"
+        app:srcCompat="@drawable/loyalgift" />
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="77dp"
+        android:layout_height="63dp"
+        app:layout_constraintEnd_toEndOf="@+id/vieasasdd"
+        app:layout_constraintStart_toStartOf="@+id/vieasasdd"
+        app:layout_constraintTop_toBottomOf="@+id/textView69"
+        app:srcCompat="@drawable/loyalredit" />
+
+    <ImageView
+        android:id="@+id/imageView40"
+        android:layout_width="77dp"
+        android:layout_height="63dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView39"
+        app:layout_constraintEnd_toStartOf="@+id/imageView39"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="@+id/vieasasdd"
+        app:layout_constraintTop_toBottomOf="@+id/textView69"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/loyalsaving" />
+
+    <TextView
+        android:id="@+id/textView70"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Complete your
+SpeedyLoan Transaction"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView40"
+        app:layout_constraintStart_toStartOf="@+id/imageView40"
+        app:layout_constraintTop_toBottomOf="@+id/imageView40" />
+
+    <TextView
+        android:id="@+id/textView71"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Check out your
+loyalty benefits"
+        android:textSize="12sp"
+
+        app:layout_constraintEnd_toEndOf="@+id/imageView39"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/imageView39"
+        app:layout_constraintTop_toBottomOf="@+id/imageView39" />
+
+    <TextView
+        android:id="@+id/textView72"
+        android:layout_width="82dp"
+        android:layout_height="47dp"
+        android:gravity="center"
+        android:text="Get Rewards
+every month"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView38"
+        app:layout_constraintStart_toStartOf="@+id/imageView38"
+        app:layout_constraintTop_toBottomOf="@+id/imageView38" />
+
+    <TextView
+        android:id="@+id/textView73"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#2C5E1A"
+        android:text="REACH A NEW LEVEL EVERY 6 MONTHS WHEN
+YOU COMPLETE THE MINIMUM LOANS"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@+id/vieasasdd2"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/vieasasdd2"
+        app:layout_constraintTop_toTopOf="@+id/vieasasdd2" />
+
+    <TextView
+        android:id="@+id/textView74"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:background="@drawable/circle_g"
+        android:gravity="center"
+        android:text="5\nloans"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView75"
+        app:layout_constraintEnd_toStartOf="@+id/textView75"
+        app:layout_constraintStart_toStartOf="@+id/vieasasdd2"
+        app:layout_constraintTop_toBottomOf="@+id/textView73" />
+
+    <TextView
+        android:id="@+id/textView75"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:background="@drawable/circle_s"
+        android:gravity="center"
+        android:text="10\nloans"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/vieasasdd2"
+        app:layout_constraintEnd_toEndOf="@+id/vieasasdd2"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/vieasasdd2"
+        app:layout_constraintTop_toBottomOf="@+id/textView73"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <TextView
+        android:id="@+id/textView76"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:background="@drawable/circle_y"
+        android:gravity="center"
+        android:text="20\nloans"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView75"
+        app:layout_constraintEnd_toEndOf="@+id/vieasasdd2"
+        app:layout_constraintStart_toEndOf="@+id/textView75"
+        app:layout_constraintTop_toBottomOf="@+id/textView73" />
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Classic"
+        app:layout_constraintBottom_toBottomOf="@+id/vieasasdd2"
+        app:layout_constraintEnd_toEndOf="@+id/textView74"
+        android:textStyle="bold"
+        android:textColor="#2C5E1A"
+        app:layout_constraintStart_toStartOf="@+id/textView74"
+        app:layout_constraintTop_toBottomOf="@+id/textView74" />
+
+    <TextView
+        android:id="@+id/textView78"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Silver"
+        app:layout_constraintBottom_toBottomOf="@+id/vieasasdd2"
+        app:layout_constraintEnd_toEndOf="@+id/textView75"
+        android:textStyle="bold"
+        android:textColor="#2C5E1A"
+        app:layout_constraintStart_toStartOf="@+id/textView75"
+        app:layout_constraintTop_toBottomOf="@+id/textView75" />
+
+    <TextView
+        android:id="@+id/textView79"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gold"
+        app:layout_constraintBottom_toBottomOf="@+id/vieasasdd2"
+        app:layout_constraintEnd_toEndOf="@+id/textView76"
+        android:textStyle="bold"
+        android:textColor="#2C5E1A"
+        app:layout_constraintStart_toStartOf="@+id/textView76"
+        app:layout_constraintTop_toBottomOf="@+id/textView76" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

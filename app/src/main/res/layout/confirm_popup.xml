@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="600dp"
+    android:layout_gravity="center"
+   >
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="wrap_content"
+        android:layout_height="409dp"
+        android:layout_marginBottom="30dp"
+        android:padding="10dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView81"
+            android:layout_width="270dp"
+            android:layout_height="421dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:text="Before continuing, please carefully read the contents of this Privacy Policy.
+
+This Privacy Notice outlines how SpeedyLoan, uses, maintains and discloses your personal data in relation to the services SpeedyLoan renders to you. Likewise, it touches upon how SpeedyLoan safeguards your personal data. At SpeedyLoan, we respect and strive to ensure that such is adequately protected. We shall therefor use your name and other information you have disclosed to us, only in the manner and for the purposes set out in this Privacy Policy. We will only collect your personal information where it is necessary for us to do so in and when such is relevant to our transactions with you. The security of your personal data is important to us and we shall maintain appropriate physical, technical and organizational measures needed to ensure the security and confidentiality of your personal data. We will only keep your information for as long as we are authorized by law or as is relevant for the purposes for which it was collected. SpeedyLoan is committed to complying with Republic Act No. 10173 or the Data Privacy Act of 2012, is a law that seeks to protect all forms of information, be it private, personal, or sensitive. It is meant to cover both natural and juridical persons involved in the processing of personal information. Your Personal Data shall be used for risk management, fraud prevention, and other similar purposes as provided under Article 2 of this Privacy Policy which will aid us in providing you with better services. Your submission of any information to us, our authorized agents or the Platforms expressly contains your warranty that such information is accurate and not misleading. We will only access and collect your personal information if you voluntarily submit the information to us or explicitly provide your consent for our access to the same. If you choose not to submit your Personal Data, or subsequently withdraw your consent to process the same, we shall respect the same. You may request for the removal of your data from our system. If you sign up for SpeedyLoan using your social media account, link your SpeedyLoan account to any of your social media accounts, or use other certain available SpeedyLoan social media features, we may access information about you which you have voluntarily provided and consented to under your social media provider in accordance with the provider’s policies. However, we undertake to manage and use the information we accessed from your social media account only for the purposes stated in this Privacy Policy and in accordance with SpeedyLoan’s Privacy Policy."
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/button14"
+            app:layout_constraintEnd_toEndOf="@+id/textView82"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="@+id/textView82"
+            app:layout_constraintTop_toBottomOf="@+id/textView82" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="116dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/round_btn_g"
+        android:text="Confirm"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="PRIVACY"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:text="Cancel"
+        app:layout_constraintEnd_toEndOf="@+id/btnCancel"
+        app:layout_constraintStart_toStartOf="@+id/btnCancel"
+        app:layout_constraintTop_toBottomOf="@+id/btnCancel" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MyProfile"
+    tools:layout_editor_absoluteX="-6dp"
+    tools:layout_editor_absoluteY="-114dp">
+
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="432dp"
+        android:layout_height="169dp"
+        android:background="@drawable/profile_curve"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="37dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="12dp"
+        android:rotation="180"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/right_arrow_green"
+        android:onClick="onclick_toProfile"
+        />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="My Profile"
+        android:textSize="29sp"
+        android:textColor="#EEF5F0"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="138dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:srcCompat="@drawable/user_pic" />
+
+    <EditText
+        android:id="@+id/mp_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#759F62"
+        android:drawableLeft="@drawable/ic_user_2_"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:paddingLeft="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <EditText
+        android:id="@+id/mp_birthdate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#759F62"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_birthday"
+        android:inputType="textPersonName"
+        android:paddingLeft="30dp"
+        android:enabled="false"
+
+        android:drawablePadding="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/mp_name"
+        app:layout_constraintStart_toStartOf="@+id/mp_name"
+        app:layout_constraintTop_toBottomOf="@+id/mp_name" />
+
+    <EditText
+        android:id="@+id/mp_contact"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#759F62"
+        android:drawableLeft="@drawable/ic_contact"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:enabled="false"
+
+        android:paddingLeft="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/mp_birthdate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/mp_birthdate"
+        app:layout_constraintTop_toBottomOf="@+id/mp_birthdate" />
+
+    <EditText
+        android:id="@+id/mp_facebook"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#759F62"
+        android:drawableLeft="@drawable/ic_fb_2"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:paddingLeft="30dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/mp_contact"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/mp_contact"
+        app:layout_constraintTop_toBottomOf="@+id/mp_contact" />
+
+    <EditText
+        android:id="@+id/mp_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#759F62"
+        android:ems="10"
+        android:paddingLeft="30dp"
+        android:drawablePadding="20dp"
+        android:drawableLeft="@drawable/ic_location"
+        android:inputType="textPersonName"
+        android:enabled="false"
+
+        app:layout_constraintEnd_toEndOf="@+id/mp_facebook"
+        app:layout_constraintStart_toStartOf="@+id/mp_facebook"
+        app:layout_constraintTop_toBottomOf="@+id/mp_facebook" />
+
+    <EditText
+        android:id="@+id/mp_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#759F62"
+        android:ems="10"
+        android:paddingLeft="30dp"
+        android:drawablePadding="20dp"
+        android:drawableLeft="@drawable/ic_view"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/mp_address"
+        app:layout_constraintStart_toStartOf="@+id/mp_address"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@+id/mp_address" />
+
+    <Button
+        android:id="@+id/togglet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="1.4in"
+        android:background="@drawable/round_btn_g"
+        android:text="Edit Profile"
+        android:onClick="onClick_toggle"
+        android:textColor="#FFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mp_password"
+        app:layout_constraintVertical_bias="0.401" />
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="toggle_pass"
+        app:layout_constraintBottom_toBottomOf="@+id/mp_password"
+        app:layout_constraintEnd_toEndOf="@+id/mp_password"
+        app:layout_constraintTop_toBottomOf="@+id/mp_address"
+        app:layout_constraintVertical_bias="0.344"
+        app:srcCompat="@drawable/changing" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

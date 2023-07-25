@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEF5F0"
+    tools:context=".ApplicationAssessment">
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="87dp"
+        android:background="@drawable/bg_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="37dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="12dp"
+        android:rotation="180"
+        android:onClick="onclick_toHome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/right_arrow_green"
+        />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Application Assessment"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#2F5233"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="110dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        app:srcCompat="@drawable/assessment" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="We are now reviewing your application"
+        android:textSize="18sp"
+        android:textColor="#2C5E1A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView30" />
+
+    <View
+        android:id="@+id/asdas"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/assessment_circle_g"
+        app:layout_constraintEnd_toEndOf="@+id/textView46"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+    <View
+        android:id="@+id/asdas2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="96dp"
+        android:background="@drawable/asssessment_circle"
+        app:layout_constraintEnd_toEndOf="@+id/asdas"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/asdas"
+        app:layout_constraintTop_toBottomOf="@+id/vgsgsd" />
+
+    <View
+        android:id="@+id/asdas3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="96dp"
+        android:background="@drawable/asssessment_circle"
+        app:layout_constraintEnd_toEndOf="@+id/asdas2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/asdas2"
+        app:layout_constraintTop_toBottomOf="@+id/vgsgsd2" />
+
+    <View
+        android:id="@+id/vgsgsd"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:background="#759F62"
+        app:layout_constraintEnd_toEndOf="@+id/asdas"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="@+id/asdas"
+        app:layout_constraintTop_toBottomOf="@+id/asdas" />
+
+    <View
+        android:id="@+id/vgsgsd2"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:background="#759F62"
+        app:layout_constraintEnd_toEndOf="@+id/asdas2"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="@+id/asdas2"
+        app:layout_constraintTop_toBottomOf="@+id/asdas2" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verifying submitted information"
+        android:textColor="#3D550C"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/asdas"
+        app:layout_constraintStart_toEndOf="@+id/asdas"
+        app:layout_constraintTop_toTopOf="@+id/asdas" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Assess loan amount"
+        android:textColor="#3D550C"
+        app:layout_constraintBottom_toBottomOf="@+id/asdas2"
+        app:layout_constraintStart_toEndOf="@+id/asdas2"
+        app:layout_constraintTop_toTopOf="@+id/asdas2" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pending amount to be disbursed"
+        android:layout_marginStart="20dp"
+        android:textColor="#3D550C"
+        app:layout_constraintBottom_toBottomOf="@+id/asdas3"
+        app:layout_constraintStart_toEndOf="@+id/asdas3"
+        app:layout_constraintTop_toTopOf="@+id/asdas3" />
+
+    <View
+        android:id="@+id/vieasd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="32dp"
+
+
+        android:background="#759F62"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+    <View
+        android:id="@+id/vieasd3"
+        android:layout_width="276dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/assessment_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="If you don’t want to waste time, you can
+select your withdrawal method first."
+        android:textColor="#2C5E1A"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vieasd" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:textColor="#2F5233"
+        android:textStyle="bold"
+        android:text="Go to Withdrawal Method"
+        app:layout_constraintStart_toEndOf="@+id/imageView31"
+        app:layout_constraintTop_toTopOf="@+id/vieasd3" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Get cash faster"
+        android:textColor="#2F5233"
+        app:layout_constraintEnd_toEndOf="@+id/textView51"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView51"
+        app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="33dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vieasd3"
+        app:layout_constraintStart_toStartOf="@+id/vieasd3"
+        app:layout_constraintTop_toTopOf="@+id/vieasd3"
+        app:layout_constraintVertical_bias="0.407"
+        app:srcCompat="@drawable/ic_withdraw" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="30dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:text="Go"
+        android:background="#D2FBA4"
+        app:layout_constraintBottom_toBottomOf="@+id/vieasd3"
+        app:layout_constraintEnd_toEndOf="@+id/vieasd3"
+        app:layout_constraintTop_toTopOf="@+id/vieasd3"
+        app:layout_constraintVertical_bias="0.621" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
